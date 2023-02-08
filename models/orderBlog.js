@@ -3,6 +3,7 @@ const Schema = mongoose.Schema;
 
 const CreatePage = new Schema({
   order: Object,
+  washtype:Array,
   phone: Number,
   location: String,
   price:Number,

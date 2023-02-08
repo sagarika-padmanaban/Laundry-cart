@@ -27,10 +27,11 @@ router.post('/order', async (req, res) => {
     try {
         const data = await CreateBlog.create({
             order: req.body.order,
+            washtype:req.body.washtype,
             phone: req.body.phone,
             location: req.body.location,
             price: req.body.price,
-            address: req.file.address
+            address: req.body.address
         });
         res.status(200).json(data)
 
